@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shopping List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e37311781e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-4 text-center">
+                <i class="fa fa-pencil-square-o text-primary"></i>Moja<span class="text-primary">Lista</span>
+            </h1>
+            <form id="product-form">
+                <div class="form-group">
+                    <label for="product">Nazwa</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Ilość</label>
+                    <input type="text" id="amount" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="info">Info</label>
+                    <input type="text" id="info" class="form-control">
+                </div>
+                <input type="submit" value="Dodaj Produkt" class="btn btn-primary btn-block">
+            </form>
+            <table class="table table-striped mt-5">
+                <thead>
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Ilość</th>
+                        <th>Info</th>
+                        <!--Delete btn-->
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="product-list"></tbody>
+            </table>
+
+        </div>
+        <!----------------JS-------------------->
+        <script src="app.js"></script>
+    </body>
+</html>
